@@ -1,13 +1,67 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+.px1{
+    padding-left: 1rem;
+    padding-right: 1rem;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.mt2{
+    margin-top: 2rem;
+}
+
+.todo{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 5px 0;
+    padding: 5px 20px;
+    border: 1px solid #eee;
+}
+
+.todo p{
+    margin-left: 10px;
+    border-left: 1px solid #eee;
+    padding-left: 10px;
+}
+
+.todo.completed {
+    text-decoration: line-through;
+    background: #b9ffc1;
+}
+
+.todo button{
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.input-field{
+    display: flex;
+    align-items: center;
+}
+
+.formChecked{
+    margin: 0 20px;
+}
+
+.todo__text{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex: 1 1 auto;
+}
+
+.syncWithLoader{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.collapsible-header{
+    align-items: center;
+    justify-content: center;
+    background: #f1c974;
+    color: #fff;
+}
+
+.collapsible-header p{
+    margin: 0;
 }
